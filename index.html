@@ -161,7 +161,7 @@
             let domen = urlval.match(urlre);
             alert(domen[1]);
             $.ajax({
-                    url: 'http://fe.it-academy.by/TestAjax3.php',
+                    url: 'https://fe.it-academy.by/TestAjax3.php',
                     type: 'GET',
                     dataType: 'text',
                     data: { func: 'GET_DOMAIN_IP', domain: domen[1] },
@@ -171,7 +171,7 @@
                 function readReady (data) {
                     alert(data); 
                     if (data==="")
-                    {urlSaitMess.textContent = 'Вы не корректно ввели адрес сайта!';};
+                    {urlSaitMess.textContent = 'Вы не корректно ввели адрес сайта!';};               
                 }
         }
 
