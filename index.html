@@ -169,7 +169,9 @@
                     error: errorHandler
                 });
                 function readReady (data) {
-                    alert(data);                
+                    alert(data); 
+                    if (data==="")
+                    {urlSaitMess.textContent = 'Вы не корректно ввели адрес сайта!';};
                 }
         }
 
